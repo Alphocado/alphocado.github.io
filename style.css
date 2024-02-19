@@ -1,0 +1,90 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-image: url(45degreee_fabric.png);
+}
+table tr td {
+  padding: 15px;
+  color: white; 
+}
+
+table {
+  user-select: none;
+  border: 10px solid rgb(63, 24, 24);
+  box-shadow: 0 0 0px 10px rgb(72, 40, 40);
+  border-radius: 10px;
+}
+
+.grid-cell {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #000;
+  text-align: center;
+  line-height: 30px;
+  float: left;
+}
+
+
+.green {
+  background-color: #A2D149;
+}
+
+.lime {
+  background-color: #AAD851;
+}
+
+tr:nth-of-type(odd) td:nth-of-type(odd) {
+  background-color: #A2D149;
+}
+tr:nth-of-type(odd) td:nth-of-type(even) {
+  background-color: #AAD851;
+}
+tr:nth-of-type(even) td:nth-of-type(odd) {
+  background-color: #AAD851;
+}
+tr:nth-of-type(even) td:nth-of-type(even) {
+  background-color: #A2D149;
+}
+
+td {
+  position: relative;
+  padding: 0;
+  margin: auto;
+}
+
+td div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  /* background-color: #000; */
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+td div div {
+  width: 70%;
+  height: 70%;
+  /* border-radius: 100px; */
+}
+
+.buah {
+  width: 70%;
+  height: 70%;
+  border-radius: 100%;
+  background-color: red;
+}
+
+.ular {
+  width: 100%;
+  height: 100%;
+  background-color: blue;
+}
